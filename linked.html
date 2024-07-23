@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom LinkedIn Banner</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+        .banner-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .banner {
+            width: 1584px; /* LinkedIn recommended banner size */
+            height: 396px;
+            position: relative;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            box-sizing: border-box;
+            color: black; /* Ensure text color is black */
+        }
+        .content .right {
+            text-align: right;
+        }
+        .content h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+        .content p {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content a {
+            color: #0000EE; /* Change link color to blue */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <div class="banner">
+            <img src="linkedin.jpg" alt="LinkedIn Banner Background">
+            <div class="content">
+                <div class="left">
+                    <!-- Placeholder for any potential logo or text -->
+                </div>
+                <div class="right">
+                    <h1>Visshwa Balasubramanian</h1>
+                    <p>Westwood High School</p>
+                    <a href="http://www.westwooddeca.org">www.westwooddeca.org</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
